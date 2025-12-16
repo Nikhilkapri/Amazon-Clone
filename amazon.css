@@ -236,9 +236,29 @@ span {
 .recently-viewed {
   margin-right: 20px;
 }
-.overlay-contain{
-    
-    margin-left: 30px;
+.overlay-contain {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;   
+    gap: 20px;          
+    margin: 20px 30px;  
+    padding-bottom: 20px;
+    background-color: #e3e6e6;
+}
+
+
+@media (max-width: 768px) {
+    .overlay-contain {
+        flex-direction: column; 
+        align-items: center;    
+        margin: 10px 0;       
+    }
+
+  
+    .overlay-contain .card {
+        width: 95%;
+        max-width: 95%;
+    }
 }
 
 .remove-menu {
@@ -1087,4 +1107,5 @@ span {
         gap: 5px;
         margin-bottom: 10px;
     }
+
 }
