@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.in Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="amazon.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-hamburger border">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <div class="nav-address border">
+                <p class="addressFirst">Deliver to Nikhil</p>
+                <div class="address-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="addressSec">New Delhi 110092</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option value="" disabled selected hidden>All</option>
+                    <option>All Categories</option>
+                    <option>Electronics</option>
+                    <option>Books</option>
+                    <option>Fashion</option>
+                    <option>Amazon Fresh</option>
+                    <option value="Amazon Pharmacy">Amazon Pharmacy</option>
+                    <option value="Appliances">Appliances</option>
+                    <option value="Apps & Games">Apps & Games</option>
+                    <option value="Audible Audiobooks">Audible Audiobooks</option>
+                    <option value="Baby">Baby</option>
+                    <option value="Beauty">Beauty</option>
+                    <option value="Books">Books</option>
+                    <option value="Car & Motorbike">Car & Motorbike</option>
+                    <option value="Clothing & Accessories">Clothing & Accessories</option>
+                    <option value="Collectibles">Collectibles</option>
+                    <option value="Computers & Accessories">Computers & Accessories</option>
+                    <option value="Deals">Deals</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Furniture">Furniture</option>
+                    <option value="Garden & Outdoors">Garden & Outdoors</option>
+                    <option value="Gift Cards">Gift Cards</option>
+                    <option value="Grocery & Gourmet Foods">Grocery & Gourmet Foods</option>
+                    <option value="Health & Personal Care">Health & Personal Care</option>
+                    <option value="Home & Kitchen">Home & Kitchen</option>
+                    <option value="Industrial & Scientific">Industrial & Scientific</option>
+                    <option value="Jewellery">Jewellery</option>
+                    <option value="Kindle Store">Kindle Store</option>
+                    <option value="Luggage & Bags">Luggage & Bags</option>
+                    <option value="Luxury Beauty">Luxury Beauty</option>
+                    <option value="Movies & TV Shows">Movies & TV Shows</option>
+                    <option value="MP3 Music">MP3 Music</option>
+                    <option value="Music">Music</option>
+                    <option value="Musical Instruments">Musical Instruments</option>
+                    <option value="Office Products">Office Products</option>
+                    <option value="Pet Supplies">Pet Supplies</option>
+                    <option value="Prime Video">Prime Video</option>
+                    <option value="Shoes & Handbags">Shoes & Handbags</option>
+                    <option value="Software">Software</option>
+                    <option value="Sports, Fitness & Outdoors">Sports, Fitness Outdoors</option>
+                    <option value="Subscribe & Save">Subscribe & Save</option>
+                    <option value="Tools & Home Improvement">Tools & Home Improvement</option>
+                    <option value="Toys & Games">Toys & Games</option>
+                    <option value="Under ₹500">Under ₹500</option>
+                    <option value="Video Games">Video Games</option>
+                    <option value="Watches">Watches</option>
+                </select>
+                <input type="text" placeholder="Search Amazon.in" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="country">
+                <div class="border d-flex">
+                    <div class="flag">
+                        <img src="Resources/India.png" alt="">
+                    </div>
+                    <p>EN</p>
+                </div>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="sign-in border">
+                <p><span>Hello, Nikhil</span></p>
+                <p class="nav-second">Accounts & Lists</p>
+            </div>
+            <div class="return border">
+                <p><span>Return</span></p>
+                <p class="nav-second">& Orders</p>
+            </div>
+            <div class="nav-cart border">
+                <div class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                </div>
+            </div>
+        </div>
+        <div class="side-menu">
+            <div class="menu-header">
+                <div class="profile">
+                    <div class="acc">
+                        <p>Your Account</p>
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <a href="">Browse Amazon</a>
+                </div>
+            </div>
+            <!-- --------- -->
+            <div class="remove-menu">
+            <button type="button" class="close-menu-btn" onclick="closeMenu()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+            <div class="menu-body">
+                <div class="home">
+                    <a href="">Amazon Home</a>
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="trends">
+                    <a href="">Trending</a>
+                    <a href="">Bestsellers</a>
+                    <a href="">New Releases</a>
+                    <a href="">Movers and Shakers</a>
+                </div>
+                <div class="top-categories">
+                    <a href="">Top Categories for you</a>
+                    <a href="">Electronics</a>
+                    <a href="">Computers and Accessories</a>
+                    <a href="">Home & Kitchen</a>
+                    <a href="">Video Games</a>
+                    <a href="">See all Categories</a>
+                </div>
+                <div class="pro-features">
+                    <a href="">Today's Deals</a>
+                    <a href="">Amazon Bazaar</a>
+                    <a href="">Amazon Pay</a>
+                    <a href="">Amazon Launchpad</a>
+                    <a href="">Handloom and Handicrafts</a>
+                    <a href="">Amazon Saheli</a>
+                    <a href="">Amazon Custom</a>
+                    <a href="">Try Prime</a>
+                    <a href="">Buy more, Save more</a>
+                    <a href="">Sell on Amazon</a>
+                    <a href="">International Brands</a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        <div class="panel">
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-ops">
+                <a href="">Rufus</a>
+                <a href="">Fresh</a>
+                <a href="">Keep Shopping for</a>
+                <a href="">Today's Deals</a>
+                <a href="">MX Player</a>
+                <a href="">Sell</a>
+                <a href="">Gift Cards</a>
+                <a href="">Amazon Pay</a>
+                <a href="">Buy Again</a>
+                <a href="">Browsing History</a>
+                <a href="">Nikhil's Amazon.in</a>
+                <a href="">Gift Ideas</a>
+                <a href="">Kindle eBooks</a>
+                <a href="">AmazonBasics</a>
+                <a href="">Prime</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="slider">
+            <div class="slider-mask">
+                <div class="slide-track">
+                    <img src="Resources/img1.jpg" alt="">
+                    <img src="Resources/img2.jpg" alt="">
+                    <img src="Resources/img3.jpg" alt="">
+                    <img src="Resources/img4.jpg" alt="">
+                </div>
+                <div class="fade-overlay"></div>
+            </div>
+            <div class="overlay-container">
+                <div class="card">
+                    <h3>Pick up where you left off</h3>
+                    <div class="card-content">
+                        <img src="https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_UF1000,1000_QL80_.jpg" alt="iPhone" style="height: 100px; margin: 0 auto;">
+                        <p>iPhone 17 Pro</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Continue shopping deals</h3>
+                    <div class="card-content">
+                        <img src="https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_UF1000,1000_QL80_.jpg" alt="iPhone" style="height: 100px; margin: 0 auto;">
+                        <p>iPhone 17 Pro</p>
+                    </div>
+                </div>
+                <div class="card ">
+                    <h3>Categories to explore</h3>
+                    <div class="card-content">
+                        <img src="https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_UF1000,1000_QL80_.jpg" alt="iPhone" style="height: 100px; margin: 0 auto;">
+                        <p>iPhone 17 Pro</p>
+                    </div>
+                </div>
+                <div class="card2 register-box">
+                    <div class="cardes">
+                        <h4>Get wholesale prices</h4>
+                        <h4>15 Cr + products</h4>
+                        <a href="#" class="btn">Register Now</a>
+                    </div>
+                    <img src="https://m.media-amazon.com/images/I/11Wk9vkPRcL.jpg" alt="">
+                </div>
+            </div>
+            <div class="overlay-container2">
+                <div class="card ">
+                    <h3>Revamp your home in style</h3>
+                    <div class="card-content">
+                        <img src="https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_UF1000,1000_QL80_.jpg" alt="iPhone" style="height: 100px; margin: 0 auto;">
+                        <p>iPhone 17 Pro</p>
+                    </div>
+                </div>
+                <div class="card ">
+                    <h3>Bulk order discounts + Up to 18% GST savings</h3>
+                    <div class="card-content">
+                        <img src="https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_UF1000,1000_QL80_.jpg" alt="iPhone" style="height: 100px; margin: 0 auto;">
+                        <p>iPhone 17 Pro</p>
+                    </div>
+                </div>
+                <div class="card ">
+                    <h3>Starting ₹149 | Headphones</h3>
+                    <div class="card-content">
+                        <img src="https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_UF1000,1000_QL80_.jpg" alt="iPhone" style="height: 100px; margin: 0 auto;">
+                        <p>iPhone 17 Pro</p>
+                    </div>
+                </div>
+                <div class="card ">
+                    <h3>Appliances for your home | Up to 55% off</h3>
+                    <div class="card-content">
+                        <img src="https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_UF1000,1000_QL80_.jpg" alt="iPhone" style="height: 100px; margin: 0 auto;">
+                        <p>iPhone 17 Pro</p>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="arrow next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="slider-second">
+            <div class="slider-text">
+                <h3 style="display: inline;">Related to items you've viewed</h3>
+                <a href="">see more</a>
+            </div>
+            <div class="slider-img">
+                <a href=""><img src="https://m.media-amazon.com/images/I/51uivfX4s9S._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/51BES2pW2sS._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/417L99iS-qL._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/41olFlvbK3L._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/41LxKEzglPL._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/51t2b+YwLNL._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/61hcxRVhm1L._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/51NzQm6OqQL._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/71CnvM5bYnL._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/51LRdLG9V3L._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/317lrRSTNBL._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/317lrRSTNBL._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/41gGQRejzyL._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/51BES2pW2sS._AC_SY200_.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="slider-second">
+            <div class="slider-text">
+                <h3 style="display: inline;">Starting ₹70,348 | From daily commutes to weekend thrills</h3>
+                <a href="">see more</a>
+            </div>
+            <div class="slider-img">
+                <a href=""><img src="https://m.media-amazon.com/images/I/71zKnIsrqML._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/61BLhBS-1tL._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/71zKnIsrqML._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/71QW6R1nZpL._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/711g1waxWpL._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/71Wnw7s8XHL._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/71+CsirvJ2L._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/71n2GOWccWL._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/71n2GOWccWL._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/71RfLrAqGgL._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/71GvHvqqFKL._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/71hbadRlx-L._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/51UAsPAhpFL._AC_SY200_.jpg" alt=""></a>
+                <a href=""><img src="https://m.media-amazon.com/images/I/51UAsPAhpFL._AC_SY200_.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="overlay-contain d-flex">
+            <div class="card recently-viewed">
+                <h3>Starting ₹49 | Deals on home essentials</h3>
+                <div class="card-content">
+                    <img src="https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_UF1000,1000_QL80_.jpg" alt="iPhone" style="height: 100px; margin: 0 auto;">
+                    <p>iPhone 17 Pro</p>
+                </div>
+            </div>
+            <div class="card recently-viewed">
+                <h3>Automotive essentials | Up to 60% off</h3>
+                <div class="card-content">
+                    <img src="https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_UF1000,1000_QL80_.jpg" alt="iPhone" style="height: 100px; margin: 0 auto;">
+                    <p>iPhone 17 Pro</p>
+                </div>
+            </div>
+            <div class="card recently-viewed">
+                <h3>Starting ₹199 | Amazon Brands & more</h3>
+                <div class="card-content">
+                    <img src="https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_UF1000,1000_QL80_.jpg" alt="iPhone" style="height: 100px; margin: 0 auto;">
+                    <p>iPhone 17 Pro</p>
+                </div>
+            </div>
+            <div class="card recently-viewed">
+                <h3>Up to 50% off | Baby care & toys | Amazon Brands</h3>
+                <div class="card-content">
+                    <img src="https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_UF1000,1000_QL80_.jpg" alt="iPhone" style="height: 100px; margin: 0 auto;">
+                    <p>iPhone 17 Pro</p>
+                </div>
+            </div>
+        </div>
+        <div class="history-section">
+            <div class="history-header">
+                <h3>Inspired by your browsing history</h3>
+                <span class="page-count" id="page-indicator">Page 1 of 7</span>
+            </div>
+            <div class="history-slider-container">
+                <button class="history-btn prev-btn" onclick="changePage(-1)">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <div class="history-track-wrapper">
+                    <div class="history-page active">
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- --------------------------------- -->
+                    <div class="history-page">
+                      <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------------- -->
+                     <div class="history-page">
+                      <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------- -->
+                     <div class="history-page">
+                      <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- --------------------------------------- -->
+                     <div class="history-page">
+                      <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- --------------------------------- -->
+                     <div class="history-page">
+                      <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ------------------------------------- -->
+                     <div class="history-page">
+                      <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                        <div class="history-card">
+                            <div class="h-img-container">
+                                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_SY200_.jpg" alt="Tshirt">
+                            </div>
+                            <div class="h-details">
+                                <a href="#" class="h-title">Bewakoof Men Cotton Graphic Oversized Fit T-Shirt</a>
+                                <div class="h-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                    <span class="h-count">90</span>
+                                </div>
+                                <div class="h-price">
+                                    <span class="currency">₹</span>
+                                    <span class="whole">599</span>
+                                    <span class="fraction">00</span>
+                                </div>
+                                <div class="h-delivery">Get it by <b>Tomorrow</b></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="history-btn next-btn" onclick="changePage(1)">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+    <div class="foot-panel1" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+        Back to top
+    </div>
+
+    <div class="foot-panel2">
+        <ul>
+            <p>Get to Know Us</p>
+            <a href="">About Us</a>
+            <a href="">Careers</a>
+            <a href="">Press Releases</a>
+            <a href="">Amazon Science</a>
+        </ul>
+        <ul>
+            <p>Connect with Us</p>
+            <a href="">Facebook</a>
+            <a href="">Twitter</a>
+            <a href="">Instagram</a>
+        </ul>
+        <ul>
+            <p>Make Money with Us</p>
+            <a href="">Sell on Amazon</a>
+            <a href="">Sell under Amazon Accelerator</a>
+            <a href="">Protect and Build Your Brand</a>
+            <a href="">Amazon Global Selling</a>
+            <a href="">Become an Affiliate</a>
+            <a href="">Fulfilment by Amazon</a>
+        </ul>
+        <ul>
+            <p>Let Us Help You</p>
+            <a href="">COVID-19 and Amazon</a>
+            <a href="">Your Account</a>
+            <a href="">Returns Centre</a>
+            <a href="">100% Purchase Protection</a>
+            <a href="">Amazon App Download</a>
+            <a href="">Help</a>
+        </ul>
+    </div>
+
+    <div class="foot-panel3">
+        <div class="logo"></div>
+    </div>
+
+    <div class="foot-panel4">
+        <div class="pages">
+            <a href="">Conditions of Use & Sale</a>
+            <a href="">Privacy Notice</a>
+            <a href="">Interest-Based Ads</a>
+        </div>
+        <div class="copyright">
+            © 1996-2025, Amazon.com, Inc. or its affiliates
+        </div>
+    </div>
+</footer>
+    <script src="amazon.js"></script>
+</body>
+
+</html>
